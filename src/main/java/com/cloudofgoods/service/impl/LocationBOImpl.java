@@ -13,6 +13,7 @@ public class LocationBOImpl implements LocationBO {
 
     @Override
     public ResponseEntity<Root> getLocationData(String location) {
+        log.info("Getting Location Data From Google API " + location);
         return new RestTemplate().getForEntity(
                 "https://maps.googleapis.com/maps/api/place/autocomplete/json?key=AIzaSyBgJFHBsP4ZuLkpUHJhQJXqRjBAf3GN-qo&input="+location,
                 Root.class );

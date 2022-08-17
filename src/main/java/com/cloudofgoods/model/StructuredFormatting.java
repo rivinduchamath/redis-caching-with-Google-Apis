@@ -5,12 +5,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StructuredFormatting{
+public class StructuredFormatting  implements Serializable {
+
+    private static final long serialVersionUID = 7156526077883281623L;
     @JsonProperty("main_text")
     public String mainText;
     @JsonProperty("main_text_matched_substrings")
