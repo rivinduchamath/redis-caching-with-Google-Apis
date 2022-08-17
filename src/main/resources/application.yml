@@ -21,16 +21,9 @@ spring:
 #      hibernate.cache.use_second_level_cache: false
 #      hibernate.cache.use_query_cache: false
 #      hibernate.generate_statistics: true
-#  redis:
-#    host: localhost
-#    port: 6379
-#  jackson:
-#    serialization:
-#      write_dates_as_timestamps: false
-#  cache:
-#    type: redis
-#
-#server:
-#  port: 2000
-#
-#debug: true
+  redis:
+    host: localhost
+    port: 6379
+
+server:
+  port: 2000
